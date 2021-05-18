@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Sign Up</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        
+        
+        
+      </ul>
+      <!-- <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul> -->
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Sign Up
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div  >
+            <label ><%=msg%></label>
+            <form class="formClass two"  id="regForm" action="/signup/login" method="post" class="needs-validation" validate onsubmit=" return validation()">
+        
+              <h1 class="myText">Create your account</h1>
+              <br>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="username" placeholder="Username" name="usrname" required>
+                  <label  id="error1"></label>
+              </div>
+              <div class="form-group">
+                <input type="contact number"  class="form-control" id="number" placeholder="Contact number" name="number" required>
+                <label  id="error2"></label>
+             </div>
+              <div class="form-group">
+                <input type="email"  class="form-control"  id="email" aria-describedby="emailHelp" placeholder="Email address" name="email" required>
+                <label  id="error3"></label>
+              </div>
+              <div class="form-group">
+                 <input type="password"  class="form-control" id="pwd" placeholder="Password" name= "password" onkeyup="return passwordcheck(this.value)">
+                 <label  id="error4"></label>
+                 <!-- <span id="strength">Type Password</span> -->
+              </div>
+              <div class="form-group">
+                <input type="password"  class="form-control" id="pwd2" placeholder="Confirm Password">
+                <label  id="error5"></label>
+                <!-- <span id="strength">Type Password</span> -->
+             </div>
+              <!-- <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" id="exampleCheck1" for="exampleCheck1">By clicking Sign Up, you agree to our Terms of Service.</label>
+                <h1></h1>
+                
+              </div> -->
+              <label id="check"></label>
+              <h1></h1>
+              <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+              
+    
+              <div class="myText">
+                <h5>Already have an account? </h5>
+                <a href="/signup/log">click here</a>
+              </div>
+            </form>
+    
+            
+    
+      </div>
+          
+                <!--/stories-->
+          
+          
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">	
+      function validation(){ 	
+        var user=document.getElementById('username').value;	
+        var number=document.getElementById('number').value;	
+        var email=document.getElementById('email').value;	
+        var password=document.getElementById('pwd').value;	
+        var cpassword=document.getElementById('pwd2').value;	
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;	
+        	
+       	
+        if (user==""){	
+            document.getElementById('error1').innerHTML=" *Username cannot be blank";	
+            return false;	
+        }	
+        if(!(number.match(phoneno))){	
+        document.getElementById('error2').innerHTML=" * Check Number format";	
+         return false;	
+       }	
+        // if (user.length <=2){	
+        //   document.getElementById('error1').innerHTML=" *Username too small";	
+        //     return false;	
+        // }	
+         if (email==""){	
+            document.getElementById('error3').innerHTML=" *Email cannot be blank";	
+            return false;	
+        }	
+        if (password==""){	
+            document.getElementById('error4').innerHTML=" *password cannot be blank";	
+            return false;	
+        }	
+        var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/;	
+          if(!(password.match(passw))) 	
+           {	
+            document.getElementById('error4').innerHTML=" *must contain one uppercase one lowercase one digit and number of characters between(6-15) ";	
+          return false;	
+           }	
+          	
+        if(password!=cpassword){	
+          document.getElementById('error5').innerHTML=" *Password mismatch";	
+            return false;	
+        }	
+        if (cpassword==""){	
+            document.getElementById('error5').innerHTML=" * confirm password cannot be blank";	
+            return false;	
+        }	
+        	
+          	
+      else 	
+       {	
+            return true;	
+        }	
+      }	
+      function passwordcheck(password){	
+      if (password.length == 0) {	
+            document.getElementById('error4').innerHTML = "cannot be blank";	
+            document.getElementById('error4').style.color="grey";	
+            return;	
+        }	
+        var regex = new Array();	
+        regex.push("[A-Z]"); 	
+        regex.push("[a-z]"); 	
+        regex.push("[0-9]"); 	
+        regex.push("[$@$!%*#?&]");	
+        var passed =0;	
+        	
+        for (var i = 0; i < regex.length; i++) {	
+            if (new RegExp(regex[i]).test(password)) {	
+                passed++;	
+            }	
+        }	
+        if (passed > 2 && password.length > 8) {	
+            passed++;	
+        }	
+       var color = "";	
+        var strength = "";	
+        switch (passed) {	
+            case 0:	
+            case 1:	
+                strength = "Weak";	
+                color = "red";	
+                break;	
+            case 2:	
+                strength = "Good";	
+                color = "darkorange";	
+                break;	
+            case 3:	
+            case 4:	
+            case 5:	
+              case 6:	
+                strength = "Strong";	
+                color = "green";	
+                break;	
+            // case 5:	
+            //     strength = "Very Strong";	
+            //     color = "darkgreen";	
+            //     break;	
+        }	
+        document.getElementById('error4').innerHTML = strength;	
+        document.getElementById('error4').style.color = color;	
+    }	
+    </script>
+
+	</body>
+</html>
